@@ -1,0 +1,20 @@
+.link {
+  text-decoration: none;
+  color: rgb(32, 16, 16); 
+  
+}
+
+.list {
+  display:flex;
+text-align: center;
+align-items: center;
+  justify-content: space-between;
+  text-decoration: none;
+  list-style: none;
+  padding: 20px;
+}
+
+.active {
+  color: rgb(32, 116, 216);
+  text-decoration: none;
+}

@@ -1,0 +1,16 @@
+.link {
+  text-decoration: none;
+  color: rgb(32, 16, 16); 
+}
+
+.controlBox {
+    display:flex;
+    text-align: center;
+    align-items: center;
+   justify-content: space-between; 
+}
+
+.button,p {
+      display:inline-flex;
+      margin: 0 auto;
+}

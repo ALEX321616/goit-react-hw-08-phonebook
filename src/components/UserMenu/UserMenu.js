@@ -25,8 +25,8 @@ export default function UserMenu() {
     <>
       {user && (
         <div className="controlBox">
-          <p> Вход выполнен , {user?.name} !</p>
-          <button type="button" onClick={LogOut}>
+          <p className={s.btn}> Вход выполнен , {user?.name} !</p>
+          <button className={s.btn} type="button" onClick={LogOut}>
             Выйти
           </button>
         </div>

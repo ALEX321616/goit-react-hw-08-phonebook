@@ -10,7 +10,7 @@
    justify-content: space-between; 
 }
 
-.button,p {
+.btn {
       display:inline-flex;
       margin: 0 auto;
 }

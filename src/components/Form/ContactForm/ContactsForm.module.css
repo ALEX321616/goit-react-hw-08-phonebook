@@ -1,0 +1,13 @@
+.contactsForm {
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+}
+.contactsInput{
+margin-bottom: 20px;
+}
+.contactsLabel{
+color: rgb(116, 16, 216);
+margin-bottom: 5px;
+}

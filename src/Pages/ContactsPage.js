@@ -1,10 +1,7 @@
 import { useState } from 'react';
 import Filter from 'components/Filter';
-import { ContactForm } from 'components/ContactForm';
-import {
-  useGetUserQuery,
-  useGetUserContactsQuery,
-} from 'components/ApiService/UserApi';
+import { ContactForm } from 'components/Form/ContactForm/ContactForm';
+import { useGetUserQuery, useGetUserContactsQuery } from 'ApiService/UserApi';
 
 import ContactItem from 'components/ContactItem';
 

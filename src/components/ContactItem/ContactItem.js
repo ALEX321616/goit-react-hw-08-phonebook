@@ -1,5 +1,5 @@
 import s from './ContactItem.module.css';
-import { useGetDeleteContactMutation } from 'components/ApiService/UserApi';
+import { useGetDeleteContactMutation } from 'ApiService/UserApi';
 
 export default function ContactItem({ props }) {
   const { name, id, number } = props;

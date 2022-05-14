@@ -1,5 +1,5 @@
 import { configureStore, combineReducers } from '@reduxjs/toolkit';
-import { UserApi } from 'components/ApiService/UserApi';
+import { UserApi } from 'ApiService/UserApi';
 import authSlice from './auth-slice';
 import {
   persistStore,

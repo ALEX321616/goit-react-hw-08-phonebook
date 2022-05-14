@@ -1,10 +1,7 @@
 import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import s from './UserMenu.module.css';
-import {
-  useGetUserQuery,
-  useGetLogOutUserMutation,
-} from 'components/ApiService/UserApi';
+import { useGetUserQuery, useGetLogOutUserMutation } from 'ApiService/UserApi';
 import { setToken, setLoggedOut } from 'redux/auth-slice';
 
 export default function UserMenu() {

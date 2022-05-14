@@ -10,6 +10,7 @@ const HomePage = lazy(() => import('../Pages/HomePage'));
 const LoginPage = lazy(() => import('../Pages/LoginPage'));
 const RegisterPage = lazy(() => import('../Pages/RegisterPage'));
 const ContactsPage = lazy(() => import('../Pages/ContactsPage'));
+const NotFoundPage = lazy(() => import('../Pages/NotFoundPage'));
 
 export const App = () => {
   const dispatch = useDispatch();
@@ -26,7 +27,7 @@ export const App = () => {
   return (
     <>
         <ToastContainer
-        position="top-right"
+        position="bottom-center"
         autoClose={1500}
         hideProgressBar={false}
         newestOnTop={false}
@@ -66,7 +67,8 @@ export const App = () => {
                 !isLoggedIn ? <LoginPage /> : <Navigate to="/" replace={true} />
               }
             />
-            <Route path="*" element={<Navigate to="/" replace={true} />} />
+            <Route path="*" element={ !isLoggedIn ? <NotFoundPage/> : <Navigate to="/contacts" replace={true} />
+              } />
           </Route>
         </Routes>
       </Suspense>
